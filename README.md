@@ -18,4 +18,5 @@
 
 [Урок 10](https://roschik.github.io/lesson_10/main.less "ДЗ к уроку 10") Препроцессор LESS для CSS.
 
+[Урок 13](https://roschik.github.io/lesson_13/ "ДЗ к уроку 13") Адаптивная верстка.
 
