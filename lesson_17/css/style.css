@@ -1,0 +1,36 @@
+.btn-danger {
+	display: block;
+	margin: 30px auto;
+}
+.modal-header {
+	background: linear-gradient(#2DC08D, #90DEC3);
+	color: #fff;
+	text-transform: uppercase;
+
+}
+.modal-body {
+	color: #2DC08D;
+}
+
+.btn-yes, .btn-yes:focus {
+	background: #fff;
+	color: #2DC08D;
+	border: 1px solid #2DC08D;
+}
+.btn-yes:hover {
+	background: #87DBBE;
+	color: #fff;
+}
+.btn-default:hover {
+	background: #fff;
+	color: #2DC08D;
+}
+.btn-default {
+    color: #fff;
+    background: linear-gradient(#2DC08D, #90DEC3);
+    border-color: #2DC08D;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+ outline: none; 
+ outline-offset: 0; 
+}
