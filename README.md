@@ -26,7 +26,11 @@
 
 [Урок 16](https://roschik.github.io/lesson_16/ "ДЗ к уроку 16") Слайдер на сайте.
 
-[Урок 17](https://roschik.github.io/lesson_17/ "ДЗ к уроку 117") Всплывающие окна.
+[Урок 17](https://roschik.github.io/lesson_17/ "ДЗ к уроку 17") Всплывающие окна.
+
+[Урок 18.1](https://roschik.github.io/lesson_18_1/ "ДЗ к уроку 18.1") Табы.
+
+[Урок 18.2](https://roschik.github.io/lesson_18_2/ "ДЗ к уроку 18.2") Аккордеон.
 
 
 ### Задания по практике
