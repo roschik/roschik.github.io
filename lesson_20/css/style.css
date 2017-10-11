@@ -1,0 +1,76 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background: url(../img/bg.jpg);
+  background-size: 100% 100%;
+}
+section {
+	height: 100vh;
+	background-size: cover;
+}
+.container {
+  margin: 0 auto;
+
+}
+.panel-group {
+  margin: 0 auto;
+  width: 80rem;
+  border-radius: 8px;
+}
+
+.header {
+  margin-top: 7rem;
+  color:  #0bbaf0;
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header ~ p {
+  text-transform: uppercase;
+  color:  #0bbaf0;
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align: center;
+}
+hr {
+  margin-bottom: 3rem;
+  width: 12%;
+  height: 1px;
+  background-color:  #c4c4c4;
+}
+p {
+  color: #0bbaf0;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+.line {
+  border: solid 1px #cbcdce;
+  width: 124px;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+.panel-heading {
+  width: 84.9rem;
+  margin-left: -9px;
+  border-radius: 0;
+  text-align: center;
+}
+.panel-group {
+  margin: 0 auto;
+  width: 83.8rem;
+  border-radius: 8px;
+}
+.panel-default > .panel-heading {
+  background-color: #0bbaf0;
+  color: #fff;
+  font-size: 2.3rempx;
+}
+.panel-group .panel {
+  border: 3px solid  #dcdcdc;
+  border-top: none;
+}
+
