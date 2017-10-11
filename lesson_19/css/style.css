@@ -1,0 +1,192 @@
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../font/MyriadPro-Regular.eot');
+	src: url('../font/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../font/MyriadPro-Regular.woff2') format('woff2'),
+		url('../font/MyriadPro-Regular.woff') format('woff'),
+		url('../font/MyriadPro-Regular.ttf') format('truetype'),
+		url('../font/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@keyframes shadow {
+0% {text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.75)}
+25% {text-shadow: 3px 10px 1px rgba(0, 0, 0, 0.75)}
+50% {text-shadow: 0px -10px 1px rgba(0, 0, 0, 0.75)}
+100% {text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.75)}
+}
+@keyframes anim-color {
+0% {color: #c51f03;}
+25% {color: yellow;}
+50% {color: green;}
+75% {color: yellow;}
+100% {color: #c51f03;}
+}
+@keyframes bg {
+0% {background: #333;)}
+100% {background: #000;)}
+}
+
+html {
+  font-size: 10px;
+}
+body {
+	background-color: #111;
+}
+.container {
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: 100% 100%;
+	font-family: 'Myriad Pro';
+	max-width: 800px;
+	margin: 3rem auto 0;
+}
+.nav-tabs {
+ border: none;
+ max-width: 300px;
+ margin: 2rem 9rem 0;
+ color: #fff;
+ font-size: 2.4rem;
+ -webkit-animation-delay: 0.4s;
+ -o-animation-delay: 0.4s;
+ animation-delay: 0.4s;
+}
+.tab-content {
+	-webkit-animation-delay: 0.4s;
+ -o-animation-delay: 0.4s;
+ animation-delay: 0.4s;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+ color: #fff;
+ cursor: default;
+ background-color: #039ccb;
+ margin-right: 0.8rem;
+ margin-left: 0.6rem;
+ text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.75);
+ border-top: 1px solid #84d3ed;
+ border-left: #0494bf;
+ border-right: #0494bf;
+ box-shadow: 1px -1px #047ca0, -1px -1px #047ca0;
+ -webkit-animation: shadow 3s 2s infinite;
+ -o-animation: shadow 3s 2s infinite;
+ animation: shadow 3s 2s infinite;
+}
+.nav>li>a {
+ padding: 0.5rem 2rem;
+ line-height: 2.4rem;
+}
+.login {
+	max-height: 444px;
+	max-width: 629px;;
+	background: #039ccb;
+	border-radius: 5px;
+	margin: 0 auto 5rem;
+	padding: 2.4rem;
+	border-top: 1px solid #84d3ed;
+	box-shadow: 1px -1px #047ca0, -1px -1px #047ca0, 1px 1px #047ca0, -1px 1px #047ca0;
+}
+.login-form {
+	position: relative;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color:  #7dd7f4;
+	background: #000;
+	padding: 4rem 6rem 2.5rem 4rem;
+	max-width: 581px;
+	-webkit-animation: bg 2s 1s;
+ -o-animation: bg 2s 1s;
+ animation: bg 2s 1s;
+}
+.login-input {
+	background: url(../img/Shape.png) no-repeat;
+	background-size: 100% 100%;
+	color: rgba(255, 255, 255, 1);
+	font-size: 2.4rem;
+	width: 100%;
+	padding: 1.5rem 2rem;
+	border: none;
+	border-radius: 5px;
+	margin-top: 3rem;
+	-webkit-animation-delay: 1s;
+ -o-animation-delay: 1s;
+ animation-delay: 1s;
+}
+.login p{
+	margin: 2rem 2.5rem;
+	color:  #c51f03;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: justify;
+	-webkit-animation: anim-color 4s 2s infinite;
+ -o-animation: anim-color 4s 2s infinite;
+ animation: anim-color 4s 2s infinite;
+}
+#prompt {
+	margin: 3rem 0.5rem 0 2.5rem;
+}
+label {
+	color:  #6f6d6d;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 1.7;
+	text-align: justify;
+}
+.login p:hover, #prompt:hover, label:hover {
+	cursor: pointer;
+}
+a {
+ color: #080808;
+ text-decoration: none;
+ background: #fff;
+}
+.login-button {
+	position: absolute;
+	bottom: 2%;
+	right: 0;
+	transform: translateX(30%);
+	background: url(../img/button.png) no-repeat;
+	background-size: 100% 100%;
+	border: none;
+	color:  #ffffff;
+	font-size: 2.4rem;
+	font-weight: 400;
+	line-height: 0.917;
+	text-align: justify;
+	padding: 1rem 4rem 1.8rem 2.7rem;
+	outline: none;
+ -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+}
+.login-checkbox {
+	animation-delay: 3s;
+	animation-fill-mode: backwards;
+}
+.reg-button {
+	transform: translateX(23%);
+}
+.reg-form form{
+	padding-top: 0;
+	padding-bottom: 3rem; 
+	margin-bottom: 1.5rem;
+}
+@media (max-width: 700px) {
+	.nav-tabs {
+ margin: 2rem 5rem 0;
+ color: #fff;
+ font-size: 2.4rem;
+	}
+}
+@media (max-width: 450px) {
+	html {
+		font-size: 8px;
+	}
+}
+@media (max-width: 360px) {
+	html {
+		font-size: 7px;
+	}
+}

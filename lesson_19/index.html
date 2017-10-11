@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Табы</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  
+  </head>
+
+  <body>
+
+    <div class="container animated zoomIn">
+      <div>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs animated fadeInUpBig" role="tablist">
+          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Вход</a></li>
+          <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Регистрация</a></li>
+          
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content animated fadeInDownBig">
+          <div role="tabpanel" class="tab-pane active" id="home">
+            <div class="login">
+             <div class="login-form">
+                <form action="#">
+                <input class="login-input animated bounceInRight" type="text" value="Ваше имя"><br>
+                <input class="login-input animated bounceInLeft" type="text" value="Пароль">
+                <p>Забыли пароль?</p>
+                <div class="login-checkbox animated hinge">
+                  <input type="checkbox" id="prompt">
+                  <label for="prompt">Напомнить мне</label>
+                </div>
+                <button class="login-button animated flash">Войти</button>
+              </form>
+             </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="profile">
+            <div class="login reg">
+              <div class="login-form reg-form">
+                <form action="#">
+                  <input class="login-input reg-input animated bounceInRight" type="text" value="E-mail"><br>
+                  <input class="login-input reg-input animated bounceInLeft" type="text" value="Пароль">
+                  <input class="login-input reg-input animated bounceInRight" type="text" value="Подтвердите пароль">
+                  <button class="login-button reg-button animated flash">Регистрация</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>  
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+
