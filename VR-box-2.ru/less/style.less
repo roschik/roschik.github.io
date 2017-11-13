@@ -1,0 +1,1914 @@
+/* Fonts family */
+@font-face {
+  font-family: 'HelveticaNeueCyr-Black';
+  src: url('../fonts/HelveticaNeueCyr-Black.eot');
+  src: url('../fonts/HelveticaNeueCyr-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeueCyr-Black.woff2') format('woff2'),
+    url('../fonts/HelveticaNeueCyr-Black.woff') format('woff'),
+    url('../fonts/HelveticaNeueCyr-Black.ttf') format('truetype'),
+    url('../fonts/HelveticaNeueCyr-Black.svg#HelveticaNeueCyr-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Roman';
+  src: url('../fonts/HelveticaNeueCyr-Roman.eot');
+  src: url('../fonts/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+    url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+    url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype'),
+    url('../fonts/HelveticaNeueCyr-Roman.svg#HelveticaNeueCyr-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url('../fonts/HelveticaNeueCyr-Light.eot');
+  src: url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
+    url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'),
+    url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype'),
+    url('../fonts/HelveticaNeueCyr-Light.svg#HelveticaNeueCyr-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Medium';
+  src: url('../fonts/HelveticaNeueCyr-Medium.eot');
+  src: url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+    url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+    url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype'),
+    url('../fonts/HelveticaNeueCyr-Medium.svg#HelveticaNeueCyr-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Bold';
+  src: url('../fonts/HelveticaNeueCyr-Bold.eot');
+  src: url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+    url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
+    url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype'),
+    url('../fonts/HelveticaNeueCyr-Bold.svg#HelveticaNeueCyr-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+.hel-100() {
+  font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+}
+.hel-300() {
+  font-family: 'HelveticaNeueCyr-Light', sans-serif;
+}
+.hel-500() {
+  font-family: 'HelveticaNeueCyr-Medium', sans-serif;
+}
+.hel-700() {
+  font-family: 'HelveticaNeueCyr-Bold', sans-serif;
+}
+.hel-900() {
+  font-family: 'HelveticaNeueCyr-Black', sans-serif;
+}
+/* Colors */
+@btn-color: #94ca2d;
+@text-color: #000000;
+@bg-color-1: #f8f8f0;
+@bg-color-2: #fcfcf6;
+@light: #ffffff;
+@shadow: #272b25;
+@sale-color: #b61919;
+@icons-color: #18a7d0;
+
+/* Basic setting */
+html {
+  font-size: 10px;
+}
+body {
+  .hel-100();
+}
+button, input, a, textarea, select {
+  &:focus {
+    outline: none;
+  }
+}
+
+/* Главный экран */
+.main {
+  background: rgba(0, 0, 0, 0.6) url(../img/main_bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: 26% 0;
+  color: @light;
+  .hel-700();
+  &-content {
+    position: relative;
+  }
+  &-title {
+    h1 {
+      margin-top: 10rem;
+      font-size: 3.9rem;
+      text-shadow: 1px 3px 0px @shadow;
+    }
+    h3 {
+      margin-bottom: 2.5rem;
+      font-size: 3rem;
+    }
+  }
+  &-btn {
+    padding: 2rem 4.4rem;
+    background: @btn-color;
+    border: none;
+    border-radius: 3px;
+    color: @light;
+    font-size: 1.8rem;
+    line-height: 1.333;
+    text-shadow: 0px 1px 2px #578f22;
+    text-transform: uppercase;
+    &:hover {
+    background: darken(@btn-color, 5%);
+    }
+  }
+  &-img {
+    &-phone {
+      position: absolute;
+      right: 1rem;
+      bottom: 0;
+      width: 48rem;
+    }
+    &-vr {
+      margin-top: 4.3rem;
+      float: left;
+      width: 40rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+.header {
+  background-color:  rgba(0, 0, 0, 0.62);
+  background-size: 100% 100%;
+  padding: 1.8rem 0 1rem;
+}
+.logo {
+  &-img {
+    width: 10rem;
+    float: left;
+    margin-right: 1.3rem;
+  }
+  p {
+    margin: 0;
+    font-size: 2rem;
+    .hel-500();
+    text-align: left;
+  }
+}
+.phone {
+  p {
+    text-align: right;
+    font-size: 2.5rem;
+    .hel-700();
+    a {
+      margin-left: 1.4rem;
+      font-size: 2rem;
+      .hel-500();
+      color: @btn-color;
+    }
+  }
+}
+
+/* Страница благодарности */
+.thanks {
+  height: 100vh;
+  .main-content {
+    transform: translateY(40%);
+    text-align: center;
+    h2 {
+      text-shadow: 1px 3px 0px #272b25;
+    }
+    h3 {
+      margin-bottom: 3rem;
+      font-size: 2.5rem;
+      .hel-500();
+    }
+    button {
+      a {
+        color: @light;
+        &:hover {
+          color: @light;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .phone {
+    float: right;
+  }
+}
+
+
+/* Секция "Что такое VR BOX 2" */
+.what_is {
+  background: @bg-color-1;
+  border-image-source: url("../img/border.svg");
+  border-image-width: 10px;
+  border-image-repeat: repeat;
+  &-block {
+    margin: 8rem 0 5rem;
+    p {
+      margin-bottom: 3rem;
+      font-size: 1.65rem;
+      line-height: 1.412;
+    }
+  }
+  &-header {
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    .hel-900();
+  }
+  &-img {
+    margin-left: 3rem;
+    float: right;
+    position: absolute;
+    width: 53rem;
+    
+  }
+  &-equipment {
+    h4 {
+      .hel-500();
+      font-size: 2rem;
+      span {
+        color: @sale-color;
+        font-size: 2.5rem;
+      }
+    }
+    &-price {
+      margin-bottom: 3.5rem;
+    }
+    ul {
+      padding: 0;
+      min-height: 11.5rem;
+      li {
+        font-size: 1.65rem;
+        list-style: none;
+      }
+      li:nth-child(5) {
+        .hel-500();
+      }
+    }
+  }
+  &-btn {
+    font-size: 1.7rem;
+    box-shadow: 0px 4px 0px 0px #76ae0c;
+  }
+}
+.border-img {
+  background: @bg-color-2 url("../img/border.png");
+  height: 6px;
+}
+/* Секция с возможностями 1 */
+.options-1 {
+  background: @bg-color-2;
+  &-block {
+    position: relative;
+    margin: 8rem 0 6rem 6rem;
+  }
+  &-movie, &-travels {
+    h3 {
+      font-size: 2.2rem;
+      .hel-500();
+    }
+    p {
+      font-size: 1.7rem;
+      line-height: 1.412;
+    }
+  }
+  &-movie {
+    &-img {
+      float: left;
+    }
+  }
+  &-travels {
+    &-img {
+      padding-right: 12rem;
+      padding-left: 3.5rem;
+      float: right;
+    }
+  }
+  &-box {
+    &-movie {
+      padding: 6rem 18rem 0 0;
+     }
+    &-travels {
+      padding: 5rem 0 0 7rem;
+    }
+  }
+  &-icon {
+    margin: 2rem 1rem 10rem 0;
+    float: left;
+  }
+  &-ruby {
+    position: absolute;
+    right: -2rem;
+    top: 35%;
+  }
+}
+
+/* Секция "Закажите VR BOX II" */
+.order {
+  background: #000 url("../img/order-bg.jpg");
+  background-position: 55% 0;
+  background-size: cover;
+  color: @light;
+  .container {
+    position: relative;
+  }
+  &-block {
+    
+    h2 {
+      margin: 8rem 0 2rem;
+      font-size: 3.5rem;
+      .hel-900();
+      line-height: 1.143;
+    }
+    &-arrow {
+      position: relative;
+      width: 47.5rem;
+      border-radius: 3px 0 0 3px;
+      padding: 1rem 3rem 1rem 2rem;
+      z-index: 100;
+      p {
+        margin-bottom: 0;
+        font-size: 1.8rem;
+        .hel-500();
+      }
+    }
+    &-arrow, &-arrow::after, &-arrow::before {
+      background: @icons-color;
+    }
+    &-arrow::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      bottom: 0;
+      left: 70%;
+      margin-left: 13.24rem;
+      border: 11px solid @icons-color;
+      transform: skewX(-30deg);
+      z-index: 1;
+    }
+    &-arrow::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 50%;
+      left: 70%;
+      margin-left: 13.24rem;
+      border: 11px solid @icons-color;
+      transform: skewX(30deg);
+      z-index: 1;
+    }
+    &-icon {
+      margin-bottom: 6rem;
+      margin-top: 3rem;
+      display: inline-block;
+      width: 24rem;
+      font-size: 1.8rem;
+      vertical-align: top;
+      img {
+        float: left;
+        width: 3.5rem;
+        margin: 0 1rem 4rem 0;
+      }
+    }
+  }
+  &-form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2rem 1rem;
+    padding: 2rem 6rem 3rem;
+    background: @text-color;
+    width: 40rem;
+    text-align: center;
+    border: 4px solid #21a3af;
+    border-radius: 3px;
+    h3 {
+      margin-bottom: 3rem;
+      font-size: 2.2rem;
+      .hel-500();
+    }
+    input, select {
+      padding: 1.3rem 2.2rem;
+      display: block;
+      width: 26.4rem;
+      background: @text-color;
+      border: 2px solid @light;
+      border-radius: 3px;
+      font-size: 1.8rem;
+      margin-bottom: 0.3rem;
+    }
+    button {
+      margin-top: 0.4rem;
+      margin-bottom: 1rem;
+      width: 26.4rem;
+      padding: 2rem 4rem;
+    }
+    small {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+/* Секция с возможностями 2 */
+.options-2 {
+  background: @bg-color-2;
+  &-block {
+    position: relative;
+    margin: 5rem 0;
+  }
+  &-sport, &-games {
+    h3 {
+      font-size: 2.2rem;
+      .hel-500();
+    }
+    p {
+      font-size: 1.7rem;
+      line-height: 1.412;
+    }
+  }
+  &-sport {
+    margin-bottom: 6rem;
+    &-img {
+      float: left;
+    }
+    &-box {
+      display: inline-block;
+      padding: 4.5rem 0 0 1rem;
+      width: 35%;
+    }
+  }
+  &-games {
+    &-img {
+      float: right;
+    }
+    &-box {
+      padding: 8rem 0 0 11rem;
+      width: 43%;
+    }
+  }
+  &-icon {
+    margin: 2rem 1rem 10rem 0;
+    float: left;
+  }
+}
+
+/* Секция "Как это работает"  */
+.section-header {
+  h2 {
+    margin-top: 8rem;
+    font-size: 3.5rem;
+    .hel-900();
+    text-align: center;
+  }
+  hr {
+    margin-bottom: 6rem;
+    background-color: @icons-color;
+    width: 5.5rem;
+    height: 5px;
+  }
+  &-left {
+    h2 {
+      text-align: left;
+    }
+  }
+}
+.instruction {
+  background: @bg-color-1;
+  position: relative;
+  &::after {
+      content: "";
+      background: @bg-color-1;
+      width: 100%;
+      height: 15rem;
+      position: absolute;
+      top: 86.2%;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: skewY(4deg);
+      z-index: 0;
+    }
+  .media {
+    position: relative;
+    min-height: 9rem;
+    text-align: center;
+    z-index: 1;
+    p {
+      font-size: 1.7rem;
+      line-height: 1.412;
+    }
+    &-left {
+      position: absolute;
+      bottom: -5%; 
+      left: 50%; 
+      background: @light;
+      border-radius: 50%;
+      width: 5.7rem;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 100;
+    }
+    &-wrap {
+      position: relative;
+      min-height: 20rem;
+        &-img {
+          margin-top: 3.5rem;
+        }
+    }
+    .circle {
+      display: inline-block;
+      background: @icons-color;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      &-border {
+        display: inline-block;
+        width: 5.7rem;
+        height: 5.7rem;
+        padding: 0.4rem;
+        border: 3px solid @icons-color;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 1.25;
+        color: @light;
+        font-size: 3.5rem;
+        .hel-700();
+      }
+    }
+  }
+  .coub {
+    float: right;
+    position: sticky;
+    transform: translateY(10%);
+    z-index: 1000; 
+  }
+}
+
+/* Секция "Совместимость очков" */
+.compatibility {
+  padding-top: 9rem;
+  padding-bottom: 5rem;
+  background: @bg-color-2;
+  p {
+    margin-top: 1rem;
+    font-size: 2.2rem;
+    .hel-500();
+  }
+  &-glasses {
+    margin-top: 3rem;
+    width: 45%;
+    float: right;
+  }
+  &-phones {
+    margin-top: 6rem;
+    div {
+      display: inline-block;
+      margin-right: 2.5rem;
+    }
+    &-windows {
+      margin-right: 0;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+
+/* Секция видео  */
+.video {
+  background: url("../img/video-bg.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  text-align: center;
+  a {
+    margin-bottom: 9rem;
+    display: block;
+    color: @light;
+    font-size: 2.2rem;
+    .hel-500();
+    div {
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+      border: 6px solid @light;
+      padding: 2rem; 
+      border-radius: 50%; 
+    }
+  }
+  h2 {
+    color: @light;
+  }
+}
+
+/* Секция "Более 100 игр и приложений" */
+.applications {
+  background: @bg-color-2;
+  &-icons {
+    text-align: center;
+    margin-bottom: 5rem;
+    &-1 {
+      margin-right: 1rem;
+    }
+  }
+  hr {margin-bottom: 3rem;}
+  h2 {
+    width: 70%;
+    margin: 8rem auto 0;
+  }
+  button {
+    width: 27rem;
+    display: block;
+    margin: 7rem auto;
+  }
+  &-block {
+    &-content {
+      &-1, &-2, &-3 {
+        h3 {
+          font-size: 2.2rem;
+          .hel-500();
+        }
+        p {
+          font-size: 1.7rem;
+          line-height: 1.412;
+          min-height: 16rem;
+        }
+        img {
+          margin-left: -11rem;
+        }
+      }
+      &-1, &-3 {
+        h3 {
+          margin-top: 4rem;
+        }
+      }
+      &-2 {
+        img {
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+}
+
+/* Секция с отзывами */
+.feedback {
+  background: @bg-color-1;
+  overflow: hidden;
+  &-box {
+    background: @light;
+    border: 1px solid #3eb7b7;
+    border-radius: 3px;
+    padding: 1rem 3rem 4rem;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-bottom: 0.6rem;
+    &-header {
+      min-height: 13rem;
+      img {
+        float: left;
+        margin-right: 3rem;
+      }
+      h3 {
+        padding-top: 4rem;
+        font-size: 1.8rem;
+        .hel-500();
+      }
+    }
+    p {
+      font-size: 1.7rem;
+      line-height: 1.412;
+    }
+  }
+  .row {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 7rem;
+  }
+  &-wrap {
+    position: relative;
+  }
+  .diamond {
+    position: absolute;
+    top: -8rem;
+    right: -8rem;
+    z-index: 10;
+    overflow: scroll;
+  }
+}
+
+/* Секция "Как мы работаем" */
+.work {
+  background: @bg-color-2;
+  position: relative;
+  padding-bottom: 7rem;
+  text-align: center;
+  &-box {
+    &-wrap {
+      position: relative;
+      min-height: 14rem;
+      img {
+        position: absolute;
+        bottom: 1rem;
+        transform: translateX(-50%);
+      }
+    }
+    p {
+      font-size: 1.7rem;
+      min-height: 8rem;
+    }
+  }
+  .red-diamond {
+    position: absolute;
+    left: 0;
+    bottom: -5rem;
+  }
+}
+
+/* Вторая секция "Закажите VR BOX II" */
+.order-2 {
+  background: url("../img/order-2-bg.jpg");
+  background-position: 80% 50%;
+  background-size: cover;
+}
+
+/* Секция "Остались вопросы" */
+.questions {
+  text-align: center;
+  margin-bottom: 5rem;
+  h2 {
+    margin-top: 5rem;
+  }
+  a {
+    font-size: 1.8rem;
+    color:  #040605;
+    .hel-500();
+    border-bottom: 1px dashed #040605;
+    &:hover, &:focus {
+      text-decoration: none;
+      color: lighten(#040605, 30%)
+    }
+  }
+}
+
+
+/* Футер */
+footer {
+  background: @text-color;
+  color: @light;
+    .phone {
+      text-align: right;
+      a {
+        color:  #94ca2d;
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: right;
+      }
+    }
+}
+
+
+/* Модальные окна */
+.popup1, .popup2, .popup3, .popup4 {
+  display: none; 
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: @light;
+  .order-form-modal {
+    position: relative;
+    transform: translateY(50%);
+    margin: 0 auto;
+  }
+  &-close {
+    position: absolute;
+    top: -3%;
+    right: -3%;
+    padding: 0.2rem;
+    margin: 0;
+    background: #000;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 2.5rem;
+    line-height: 0.6;
+    color: #21a3af;
+    border: 3px solid #21a3af;
+    border-radius: 50%;
+    &:hover {
+      transform: scale(1.3);
+      text-decoration: none;
+    }
+  }
+}
+
+.popup4 {
+   select {
+    margin: 0 auto 1.5rem;
+ 
+     option {
+      background: #000;
+     }
+   }
+}
+
+
+
+.modal-1 {
+  display: none; 
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;       
+  z-index: 100; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: @light;
+  .video1 {
+    margin: 0 auto;
+    width: 50%;
+    height: 60%;
+    max-width: 60rem;
+    min-width: 35rem;
+    max-height: 35rem;
+    min-height: 18rem;
+    transform: translateY(50%);
+    border: 3px solid @icons-color;
+    border-radius: 3px;
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .close-1 {
+    position: absolute;
+    top: -2%;
+    right: -1%;
+    padding: 0.2rem;
+    margin: 0;
+    background: #000;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 2.5rem;
+    line-height: 0.6;
+    color: @icons-color;
+    border: 3px solid @icons-color;
+    border-radius: 50%;
+    z-index: 101; 
+    &:hover {
+      color: @icons-color;
+      transform: scale(1.3);
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+/* Раздел Медиа-запросы */
+@media (max-width: 1199px) {
+  .what_is {
+    &-img {
+      margin-left: 0;
+      width: 48rem;
+    }
+    &-block {
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .options-1 {
+    &-box {
+      &-movie {
+        padding: 6rem 6rem 0 0;
+      }
+      &-travels {
+        padding: 5rem 0 0 0;
+      }
+    }
+    &-travels {
+      &-img {
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+    }
+  }
+  .options-2 {
+    .container {
+      overflow: hidden;
+    }
+    &-sport {
+      &-box {
+        width: 40%;
+      }
+    }
+    &-games {
+      &-box {
+        padding-left: 4rem;
+      }
+      &-img {
+        margin-right: -10rem;
+        overflow: scroll;
+      }
+    }
+  }
+  .instruction {
+    .coub {
+      transform: translateY(5%);
+    }
+  }
+  .compatibility {
+    &-glasses {
+      margin-top: 5.5rem;
+      width: 43%;
+      img {
+        width: 45rem;
+      }
+    }
+    &-phones {
+      div {
+        margin-right: 1rem;
+      }
+    }  
+  }
+  .feedback {
+    .diamond {
+      width: 17rem;
+      top: -9rem;
+      right: -9rem;
+    }
+  }
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 9px;
+  }
+  .main {
+    &-img {
+      &-phone {
+        margin-top: -9rem;
+        float: right;
+        width: 40rem;
+      }
+      &-vr {
+        width: 30rem;
+      }
+    }
+  }
+  .what_is {
+    &-img {
+      float: left;
+      position: relative;
+      width: 48rem;
+    }
+  }
+  .options-1 {
+    &-block {
+        margin: 5rem 0 5rem 0;
+      }   
+    &-box {
+      &-movie {
+        padding: 6rem 0 0 0;
+      }
+      &-travels {
+        padding: 5rem 0 0 0;
+      }
+    }
+    &-travels {
+      &-img {
+        padding: 0 0 0 2rem;
+        width: 38rem;
+      }
+    }
+    &-movie {
+      &-img {
+        padding: 0;
+        width: 38rem;
+      }
+    }
+    &-ruby {
+      display: none;
+    }
+  }
+  .order {
+    &-block {
+      &-arrow {
+        width: 38rem;
+      }
+      &-arrow::after {
+        margin-left: 10rem;
+        transform: skewX(-15deg);
+      }
+      &-arrow::before {
+        margin-left: 10rem;
+        transform: skewX(15deg);
+      }
+      &-icon {
+        width: 20rem;
+        font-size: 1.6rem;
+        img {
+          width: 3rem;
+        }
+      }
+    }
+  }
+  .options-2 {
+    &-block {
+      margin: 5rem 0 5rem 0;
+    }   
+    &-sport {
+      &-box {
+        padding-top: 2rem;
+      }
+    }
+    &-games {
+      &-box {
+       padding-top: 3rem;
+      }
+    }
+    &-sport {
+      &-img {
+        padding: 0 0 0 2rem;
+        width: 44rem;
+      }
+    }
+    &-games {
+      &-img {
+        padding: 0;
+        margin: 0;
+        width: 40rem;
+      }
+    }
+    &-icon {
+      width: 4rem;
+    }
+    &-sport, &-games {
+      h3 {
+        font-size: 1.9rem;
+      }
+      p {
+        font-size: 1.5rem;
+        line-height: 1.3;
+      }
+    }
+  }
+  .compatibility {
+    p {
+      font-size: 1.8rem;
+    }
+    &-glasses {
+      margin-top: 5.5rem;
+      width: 40%;
+      img {
+        width: 34rem;
+      }
+    }
+    &-phones {
+      div {
+        width: 31%;
+        margin-right: 0;
+        img {
+          width: 85%;
+          min-height: 20.5rem;
+        }
+      }
+    }  
+  }
+  .instruction {
+    .coub {
+      transform: translateY(-12%);
+      width: 7rem;
+    }
+  }
+  .applications {
+    &-block {
+      &-content {
+        &-1, &-2, &-3 {
+          p {
+            min-height: 22rem;
+          }
+          img {
+            margin-left: -8rem;
+            width: 30rem;
+          }
+        }
+        &-2 {
+          img {
+            margin-top: 2.1rem;
+            width: 32rem;
+          }
+        }
+      }
+    }
+  }
+  .feedback {
+    &-box {
+      &-header {
+        min-height: 11rem;
+      }
+      img {
+        width: 10rem;
+        margin-right: 1.5rem;
+      }
+      h3 {
+        font-size: 1.7rem;
+      }
+    }
+  }
+  .work {
+    &-box {
+      p {
+        display: inline-block;
+        width: 70%;
+        min-height: 9rem;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 8px;
+  }
+  .phone {
+    p {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+  }
+  .what_is {
+    &-equipment {
+      ul {
+        min-height: 0;
+      }
+    }
+     &-block {
+      margin: 4rem 0 4.5rem;
+      p {
+        padding-right: 7rem;
+      }
+    }
+
+  }
+  .options-1 {
+    background: @light;
+    &-block {
+      text-align: center;
+      padding: 0 1rem 0 2rem;
+      }   
+    &-box {
+      text-align: left;
+      width: 60%;
+      margin: 0 auto;
+      &-movie {
+        padding: 0;
+        margin-top: -5rem;
+      }
+      &-travels {
+        padding: 0;
+      }
+    }
+    &-travels {
+      &-img {
+        float: none;
+        width: 38rem;
+      }
+    }
+    &-movie {
+      &-img {
+        float: none;
+        margin: 0 auto;
+        width: 38rem;
+      }
+    }
+    &-icon {
+      margin: 0 1rem 10rem 0;
+      width: 4rem;
+    }
+  }
+  .order {
+    &-block {
+      width: 40.5rem;
+      margin: 0 auto;
+      &-arrow {
+        width: 38rem;
+      }
+      &-arrow::after {
+        margin-left: 10rem;
+        transform: skewX(-15deg);
+      }
+      &-arrow::before {
+        margin-left: 10rem;
+        transform: skewX(15deg);
+      }
+      &-icon {
+        width: 20rem;
+        font-size: 1.6rem;
+        img {
+          width: 3rem;
+        }
+      }
+    }
+    &-form {
+      position: relative;
+      margin: 0;
+      margin-top: 2rem;
+    }
+  }
+  .options-2 {
+    display: none;
+  }
+  .border-img {
+    display: none;
+  }
+  .instruction {
+    .media {
+       &-circle {
+        width: 4.5rem;
+        line-height: 1.1;
+        padding: 0.3rem;
+      } 
+      &-wrap {
+        min-height: 22rem;
+      }
+    }
+    .coub {
+      display: none;
+    }
+  }
+  .compatibility {
+    p {
+      font-size: 1.8rem;
+    }
+    &-glasses {
+      margin: 6rem auto 5rem;
+      float: none;
+      width: 60%;
+      img {
+        width: 45rem;
+      }
+    }
+    &-phones {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      div {
+        text-align: center;
+        img {
+          width: 17rem;
+          height: 34rem;
+        }
+      }
+    }  
+  }
+  .section-header-left {
+    h2 {
+      text-align: center;
+    }
+  }
+  .applications {
+    button {
+      width: 26.5rem;
+      margin: 5rem auto;
+    }
+    &-block {
+      &-content {
+        &-1, &-2, &-3 {
+          width: 60%;
+          margin: 0 auto;
+          h3 {
+            font-size: 2.1rem;
+            .hel-500();
+          }
+          p {
+            font-size: 1.6rem;
+            line-height: 1.35;
+            min-height: 0;
+            margin-bottom: 3rem;
+          }
+          img {
+            width: 35rem;
+            margin-left: 8%;
+          }
+        }
+        &-1, &-3 {
+          h3 {
+            margin-top: 2rem;
+          }
+        }
+        &-2 {
+          img {
+            margin-top: 0;
+            width: 37rem;
+          }
+        }
+      }
+    }
+  }
+  .feedback {
+    &-box {
+      width: 70%;
+      margin: 0 auto 0.6rem;
+      &-header {
+        min-height: 11.5rem;
+        img {
+          margin-right: 3rem;
+        }
+      }
+      &-hidden {
+        display: none;
+      }
+    } 
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 5rem;
+    }
+    .diamond {
+      display: none;
+    }
+  }
+  .work {
+    padding-bottom: 4rem;
+    &-box {
+      &-wrap {
+        min-height: 0;
+        img {
+          position: relative;
+          padding-bottom: 1rem;
+          bottom: 0;
+          transform: translateX(0%);
+        }
+      }
+      p {
+        padding-bottom: 2rem;
+        min-height: 0;
+        width: 40%;
+      }
+    }
+    .red-diamond {
+      display: none;
+    }
+  }
+  footer {
+    .logo {
+      width: 47rem;
+      margin: 4rem auto;
+    }
+    .phone {
+      text-align: center;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      a, p {
+        display: block;
+      }
+      a {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 5.5rem;
+      }
+      p {
+        margin-bottom: 3rem;
+        font-size: 3.125rem;
+      }
+    }
+  }
+  .thanks {
+   .phone {
+     float: none;
+   }
+   .logo {
+    width: 47rem;
+    margin: 0 auto 2rem;
+   }
+  }
+  .modal-1 {
+    .video1 {
+      width: 80%;
+      height: 50%;
+      max-width: 40rem;
+      min-width: 28rem;
+      max-height: 25rem;
+      min-height: 20rem;
+    }
+  }
+}
+@media (max-width: 611px) {
+ .main {
+  overflow: hidden;
+    &-title {
+      h1 {
+        margin-top: 5rem;
+        margin-bottom: 0;
+        font-size: 2.8rem;
+        line-height: 1.3;
+      }
+      h3 {
+        margin-top: 0.5rem;
+        margin-bottom: 3rem;
+        font-size: 2.6rem;
+      }
+    }
+    &-btn {
+      padding: 1.7rem 4rem;
+      font-size: 1.5rem;
+    }
+    &-img {
+      &-phone {
+        margin-top: 0;
+        right: -6.5rem;
+        bottom: 1rem;
+        width: 30rem;
+        overflow: scroll;
+      }
+      &-vr {
+        margin: 6rem 0 4rem 2rem;
+        width: 26rem;
+      }
+    }
+  }
+  .options-1 {
+    &-box {
+      width: 80%;
+    }
+  }
+  .compatibility {
+    p {
+      font-size: 1.65rem;
+    }
+    &-glasses {
+      width: 70%;
+      img {
+        width: 45rem;
+      }
+    }
+    &-phones {
+      width: 95%;
+      div {
+        img {
+          width: 15rem;
+          height: 29rem;
+        }
+      }
+    }  
+  }
+  .applications {
+    &-block {
+      &-content {
+        &-1, &-2, &-3 {
+          width: 70%;
+          margin: 0 auto;
+          img {
+            margin-left: 0%;
+          }
+        }
+      }
+    }
+  }
+  .thanks {
+  .main-content {
+    h3 {
+      margin-bottom: 3rem;
+      font-size: 1.8rem;
+      .hel-500();
+    }
+  }
+}
+}
+@media (max-width: 540px) {
+  .main {
+    background-position: 34% 0;
+    &-title {
+      h1 {
+        font-size: 2.7rem;
+      }
+      h3 {
+        font-size: 2.4rem;
+      }
+    }
+  }
+  .instruction {
+    .media {
+      &-left {
+        position: absolute;
+        bottom: 0; 
+        left: 50%; 
+        background: @light;
+        border-radius: 50%;
+        width: 4.2rem;
+        transform: translateX(-50%) translateY(0%);
+        z-index: 100;
+      }
+      .circle {
+        &-border {
+          width: 4.2rem;
+          height: 4.2rem;
+          padding: 0.7rem;
+          font-size: 1.9rem;
+        }
+      }
+      &-wrap {
+        min-height: 13rem;
+        img {
+          width: 13rem;
+        }
+      }
+      &-body {
+        &-wrap {
+          display: inline-block;
+          min-height: 8rem;
+        }
+        
+        p {
+          font-size: 1.5rem;
+          z-index: 100;
+        }
+      }
+    }
+    &::after {
+      height: 15rem;
+      position: absolute;
+      top: 80%;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: skewY(4deg);
+    }
+  }
+  .section-header {
+    h2 {
+      margin-top: 4rem;
+      font-size: 2.75rem;;
+    }
+    hr {
+      margin-bottom: 3rem;
+    }
+  }
+  .compatibility {
+    p {
+      font-size: 1.5rem;
+    }
+    &-glasses {
+      width: 70%;
+      img {
+        width: 32rem;
+      }
+    }
+    &-phones {
+      width: 100%;
+      div {
+        img {
+          width: 11rem;
+          height: 22rem;
+        }
+      }
+    }  
+  }
+  .video {
+    background-size: auto 100%;
+    a {
+      margin-bottom: 6rem;
+      display: block;
+      color: @light;
+      font-size: 1.5rem;
+      .hel-500();
+      div {
+        margin-top: 2.5rem;
+        margin-bottom: 0.7rem;
+        border: 6px solid @light;
+        padding: 1.2rem;
+        img {
+          width: 3rem;
+        } 
+       }
+    }
+    h2 {
+      color: @light;
+    }
+  }
+  .feedback {
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    &-box {
+      width: 100%;
+      padding: 2rem;
+      margin: 0 auto 0.6rem;
+      p {
+        font-size: 1.4rem;
+      }
+      &-header {
+        min-height: 8rem;
+        img {
+          width: 8rem;
+          margin-right: 1rem;
+        }
+        h3 {
+          font-size: 1.6rem;
+          padding-top: 3rem;
+          margin-top: 0;
+        }
+      }
+    } 
+    .row {
+      margin-bottom: 3rem;
+    }
+  }
+  .work {
+    padding-bottom: 2rem;
+    hr {
+      margin-bottom: 5rem;
+    }
+    &-box {
+      &-wrap {
+        img {
+          width: 27%;
+        }
+      }
+      p {
+        width: 60%;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .questions {
+    background: @bg-color-2;
+    margin-bottom: 3rem;
+    h2 {
+      margin-top: 3rem;
+    }
+    a {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .logo {
+    img {
+      width: 7rem;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+  }
+  .phone {
+    p {
+      font-size: 2.15rem;
+      a {
+        margin-left: 1rem;
+        font-size: 1.75rem;
+      }
+    }
+  }
+  .main {
+    &-title {
+      h1 {
+        font-size: 2.4rem;
+      }
+      h3 {
+        font-size: 2.3rem;
+      }
+    }
+    &-img {
+      &-phone {
+        width: 27rem;
+      }
+      &-vr {
+        width: 24rem;
+      }
+    }
+  }
+  .what_is {
+    &-header {
+      margin-bottom: 1rem;
+      font-size: 2.75rem;
+    }
+    &-block {
+      p {
+        padding-right: 0;
+        font-size: 1.35rem;
+      }
+    }
+  }
+  .options-1 {
+    &-box {
+      width: 100%;
+    }
+  }
+  .order {
+    &-block {
+      width: 35rem;
+      margin: 0 auto;
+      h2 {
+        margin: 4rem 0 1rem 2rem;
+        font-size: 2.75rem;
+      }
+      &-arrow {
+        width: 35rem;
+        p {
+          font-size: 1.5rem;
+        }
+      }
+      &-arrow::after {
+        top: 49%;
+        margin-left: 9rem;
+        transform: skewX(-15deg);
+      }
+      &-arrow::before {
+        margin-left: 9rem;
+        transform: skewX(15deg);
+      }
+      &-icon {
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+        width: 49%;
+        font-size: 1.4rem;
+        img {
+          width: 3rem;
+        }
+      }
+    }
+    &-form {
+      padding-bottom: 1.5rem;
+      width: 34rem;
+      h3 {
+        margin: 0 0 2rem; 
+        font-size: 1.75rem;
+      }
+      input, select {
+        padding: 1rem 1.8rem;
+        width: 22rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.2rem;
+      }
+      button {
+        margin-top: 0.2rem;
+        margin-bottom: 0.5rem;
+        width: 22rem;
+        padding: 1.5rem;
+      }
+      small {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .applications {
+    &-block {
+      &-content {
+        &-1, &-2, &-3 {
+          width: 80%;
+          margin: 0 auto;
+          img {
+            margin-left: -2%;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .logo {
+      width: 33rem;
+      p {
+        font-size: 1.37rem;
+      }
+    }
+  }
+  .popup4 {
+   select {
+    margin: 0 auto 1rem;
+   }
+  }
+}
+
+@media (max-width: 391px) {
+ .main {
+    &-title {
+      h1 {
+        font-size: 1.9rem;
+      }
+      h3 {
+        font-size: 2.05rem;
+      }
+    }
+    &-btn {
+      font-size: 1.3rem;
+    }
+    &-img {
+      &-phone {
+        width: 24rem;
+      }
+      &-vr {
+        margin: 6rem 0 4rem 1rem;
+        width: 20rem;
+      }
+    }
+  }
+  .what_is {
+    &-img {
+      width: 38rem;
+    }
+    &-equipment {
+      h4:first-child {
+        font-size: 2.1rem;
+        }
+      h4:last-child {
+        font-size: 1.85rem;
+        span {
+          font-size: 2rem;
+        }
+      }
+    }
+    &-btn {
+      padding: 1.6rem 2.2rem;;
+    }
+  }
+  .options-1 {
+    &-movie, &-travels {
+      h3 {
+        font-size: 1.9rem;
+      }
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .compatibility {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    &-glasses {
+      margin: 3rem auto 3rem;
+      width: 80%;
+      img {
+        width: 30rem;
+      }
+    }
+    &-phones {
+      width: 100%;
+      div {
+        img {
+          width: 9.5rem;
+          height: 20rem;
+        }
+      }
+    }  
+  }
+  .applications {
+    button {
+      width: 22rem;
+    }
+    &-block {
+      &-content {
+        &-1, &-2, &-3 {
+          width: 90%;
+          margin: 0 auto;
+          img {
+            margin-left: -9%;
+          }
+        }
+      }
+    }
+  }
+  .order-block-arrow-2 {
+      &::after {
+        top: 49%;
+        margin-left: 8.43rem;
+        transform: skewX(-15deg);
+      }
+      &::before {
+        margin-left: 8.43rem;
+        transform: skewX(15deg);
+      }
+  }
+}
+
+
+
+
+
+
+
+
